@@ -14,7 +14,7 @@ public class Movie_DetailsTest {
 		
 		Movie_DetailsList movieList=new Movie_DetailsList();
 		
-		
+		//creating objects for different movies
 		Movie_Details movie=new Movie_Details("Dabang","Salman","Sonakshi","Drama");
 		Movie_Details movie1=new Movie_Details("DDLJ","SRK","Kajol","Romance");
 		Movie_Details movie2=new Movie_Details("Dangal","Amir","Pooja","Sports");
