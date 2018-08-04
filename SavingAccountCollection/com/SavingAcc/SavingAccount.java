@@ -7,7 +7,7 @@ public class SavingAccount implements Comparable<SavingAccount>{
 	private boolean isSalaryAccount;
 	private static final double MINBAL=10000;
 	
-	
+	//Parameterized Constructor
 	public SavingAccount(double acc_balance, int acc_ID, String accountHolderName, boolean isSalaryAccount) {
 		super();
 		this.acc_balance = acc_balance;
@@ -19,7 +19,7 @@ public class SavingAccount implements Comparable<SavingAccount>{
 	
 	
 	
-	
+	//Overridden hasCode and equals methods to restrict duplicate entries
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -49,7 +49,7 @@ public class SavingAccount implements Comparable<SavingAccount>{
 
 
 
-
+	//Overridden toString method
 	@Override
 	public String toString() {
 		return "SavingAccount [acc_balance=" + acc_balance + ", acc_ID=" + acc_ID + ", accountHolderName="
@@ -59,7 +59,7 @@ public class SavingAccount implements Comparable<SavingAccount>{
 
 
 
-
+	//getter ans setters
 	public double getAcc_balance() {
 		return acc_balance;
 	}
@@ -85,7 +85,7 @@ public class SavingAccount implements Comparable<SavingAccount>{
 		this.isSalaryAccount = isSalaryAccount;
 	}
 	
-	
+	//logic for Withdrawal 
 	public void withdraw(float money)
 	{
 		
@@ -115,6 +115,8 @@ public class SavingAccount implements Comparable<SavingAccount>{
 		
 	}
 	
+	
+	//logic for deposition 
 	public void deposite(float money)
 	{
 		acc_balance+=money;
@@ -123,7 +125,7 @@ public class SavingAccount implements Comparable<SavingAccount>{
 
 
 
-
+	//Overridden compareTo method to sort the set based on the accID
 	@Override
 	public int compareTo(SavingAccount savAcc) {
 		
