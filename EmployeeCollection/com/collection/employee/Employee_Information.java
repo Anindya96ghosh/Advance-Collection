@@ -33,9 +33,13 @@ public class Employee_Information {
 		accounts.add(account);
 	}
 	
+	
+	
 	public Set<MMSavingAcc> getAccounts() {
 	    return accounts;
 	}
+	
+	// getters 
 	public int getEmpID() {
 		return empID;
 	}
