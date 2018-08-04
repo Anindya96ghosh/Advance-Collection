@@ -19,12 +19,13 @@ public class Test {
 		sa[3]=new SavingAccount(4_00_000, 104, "Nishad", false);
 		sa[4]=new SavingAccount(5_00_000, 105, "Sayali", true);
 		
-		
+		//adding accounts to the list
 		for(int i=0;i<5;i++)
 		{
 			list.add(sa[i]);
 		}
 		
+		//printing the list
 		for(SavingAccount ans:list)
 		{
 			System.out.println(ans);
@@ -33,22 +34,5 @@ public class Test {
 
 	}
 	
-//	public void save(String fileName)
-//	{
-//		
-//		String tmp=list.toString();
-//		PrintWriter pw= new PrintWriter(new FileOutputStream(FileName));
-//		pw.write(tmp);
-//		pw.close();
-//		
-//	}
-//
-//	public void load(String fileName) throws FileNotFoundException
-//	{
-//		FileInputStream fileIn= new FileInputStream(fileName);
-//		Scanner scan= new Scanner(fileIn);
-//		String loadedClubs = scan.next();
-//		list.add(loadedClubs);
-//	}
 
 }
